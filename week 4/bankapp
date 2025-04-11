@@ -1,0 +1,46 @@
+def credit(amount,balance,transactions):
+    balance+=amount
+    print("amount added succesfully")
+    transaction.append(amount)
+    return balance,transaction
+    
+    
+    
+def debit(amount,balance,transaction):
+    if balance<=amount:
+        print("insufficient balance")
+    balance-=amount
+    print("amount debited succesfully")
+    transaction.append(amount)
+    return blanace,transaction
+    
+def show_balance(balance):
+    return balance
+    
+def transactions(transactions):
+    return transaction
+        
+    
+    
+balance=0
+transaction=[]
+while True:
+    print("enter 1 for credit")
+    print("enter 2 for debit")
+    print("enter 3 for show balance")
+    print("enter 4 for transaction")
+    print("enter 5 for exit")
+    break
+choice=int(input("enter your choice: "))
+if choice==1:
+    amount=int(input("enter the amount to be credited: "))
+    balance,transaction=credit(amount,balance,transaction)
+    
+if choice==2:
+    amount=int(input("enter the amount to be debited: "))
+    balance,transaction=credit(amount,balance,transaction)
+    
+if choice==3:
+    Balance= show_balance(balance)
+    print("total balance ",Balance)
+    
